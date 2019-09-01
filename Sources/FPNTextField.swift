@@ -128,7 +128,7 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
         flagButton.accessibilityLabel = "flagButton"
         switch countryShowerType {
         case .countryPickerWithCountrySaerch:
-            flagButton.addTarget(self, action: #selector(displayCountryKeyboard), for: .touchUpInside)
+            flagButton.addTarget(self, action: #selector(displayAlphabeticKeyBoard), for: .touchUpInside)
         case .countrySearch:
             flagButton.addTarget(self, action: #selector(displayAlphabeticKeyBoard), for: .touchUpInside)
         default:
