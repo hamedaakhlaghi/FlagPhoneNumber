@@ -37,9 +37,7 @@
 		0D19301E2293078C002583B1 /* FPNCountryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D192FF32293078B002583B1 /* FPNCountryView.xib */; };
 		0D19301F2293078C002583B1 /* countryCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D192FF42293078B002583B1 /* countryCodes.json */; };
 		0D1930202293078C002583B1 /* FlagKit.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D192FF52293078B002583B1 /* FlagKit.xcassets */; };
-		0D1930212293078C002583B1 /* FPNCountryPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D192FF72293078B002583B1 /* FPNCountryPickerDelegate.swift */; };
 		0D1930222293078C002583B1 /* FPNNibLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D192FF82293078B002583B1 /* FPNNibLoadingView.swift */; };
-		0D1930232293078C002583B1 /* FPNCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D192FF92293078B002583B1 /* FPNCountryPicker.swift */; };
 		0D1930242293078C002583B1 /* FPNCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D192FFA2293078B002583B1 /* FPNCountryView.swift */; };
 		0D1930252293078C002583B1 /* FPNCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D192FFB2293078B002583B1 /* FPNCountry.swift */; };
 		0D1930262293078C002583B1 /* FPNTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D192FFC2293078C002583B1 /* FPNTextFieldDelegate.swift */; };
@@ -50,6 +48,8 @@
 		0DA9CA0B2293E39500723B96 /* FlagPhoneNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D8C7134229296D40026E0C7 /* FlagPhoneNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DF48B4422917077006AB39C /* FPNFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF48B1622916F9F006AB39C /* FPNFormat.swift */; };
 		0DF48B4522917077006AB39C /* FPNSearchCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF48B1522916F9F006AB39C /* FPNSearchCountryViewController.swift */; };
+		AF62C761231BACAB00E87E67 /* FPNCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62C75F231BACA100E87E67 /* FPNCountryPicker.swift */; };
+		AF62C762231BACAB00E87E67 /* FPNCountryPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62C760231BACAB00E87E67 /* FPNCountryPickerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,9 +83,7 @@
 		0D192FF32293078B002583B1 /* FPNCountryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPNCountryView.xib; sourceTree = "<group>"; };
 		0D192FF42293078B002583B1 /* countryCodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countryCodes.json; sourceTree = "<group>"; };
 		0D192FF52293078B002583B1 /* FlagKit.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FlagKit.xcassets; sourceTree = "<group>"; };
-		0D192FF72293078B002583B1 /* FPNCountryPickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPNCountryPickerDelegate.swift; sourceTree = "<group>"; };
 		0D192FF82293078B002583B1 /* FPNNibLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPNNibLoadingView.swift; sourceTree = "<group>"; };
-		0D192FF92293078B002583B1 /* FPNCountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPNCountryPicker.swift; sourceTree = "<group>"; };
 		0D192FFA2293078B002583B1 /* FPNCountryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPNCountryView.swift; sourceTree = "<group>"; };
 		0D192FFB2293078B002583B1 /* FPNCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPNCountry.swift; sourceTree = "<group>"; };
 		0D192FFC2293078C002583B1 /* FPNTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPNTextFieldDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +96,8 @@
 		0DF48B1522916F9F006AB39C /* FPNSearchCountryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPNSearchCountryViewController.swift; sourceTree = "<group>"; };
 		0DF48B1622916F9F006AB39C /* FPNFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPNFormat.swift; sourceTree = "<group>"; };
 		0DF48B3922917047006AB39C /* FlagPhoneNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlagPhoneNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF62C75F231BACA100E87E67 /* FPNCountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPNCountryPicker.swift; sourceTree = "<group>"; };
+		AF62C760231BACAB00E87E67 /* FPNCountryPickerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPNCountryPickerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,9 +181,9 @@
 		0D192FF62293078B002583B1 /* FPNCountryPicker */ = {
 			isa = PBXGroup;
 			children = (
-				0D192FF72293078B002583B1 /* FPNCountryPickerDelegate.swift */,
+				AF62C75F231BACA100E87E67 /* FPNCountryPicker.swift */,
+				AF62C760231BACAB00E87E67 /* FPNCountryPickerDelegate.swift */,
 				0D192FF82293078B002583B1 /* FPNNibLoadingView.swift */,
-				0D192FF92293078B002583B1 /* FPNCountryPicker.swift */,
 				0D192FFA2293078B002583B1 /* FPNCountryView.swift */,
 				0D192FFB2293078B002583B1 /* FPNCountry.swift */,
 			);
@@ -318,7 +318,6 @@
 				0D1930102293078C002583B1 /* NBPhoneNumberUtil+ShortNumber.m in Sources */,
 				0D1930242293078C002583B1 /* FPNCountryView.swift in Sources */,
 				0D1930222293078C002583B1 /* FPNNibLoadingView.swift in Sources */,
-				0D1930232293078C002583B1 /* FPNCountryPicker.swift in Sources */,
 				0D1930262293078C002583B1 /* FPNTextFieldDelegate.swift in Sources */,
 				0D1930062293078C002583B1 /* NSArray+NBAdditions.m in Sources */,
 				0D1930292293078C002583B1 /* FPNDelegate.swift in Sources */,
@@ -326,11 +325,13 @@
 				0D19300C2293078C002583B1 /* NBRegularExpressionCache.m in Sources */,
 				0D1930142293078C002583B1 /* NBMetadataHelper.m in Sources */,
 				0D1930282293078C002583B1 /* FPNTextField.swift in Sources */,
+				AF62C762231BACAB00E87E67 /* FPNCountryPickerDelegate.swift in Sources */,
 				0D19301A2293078C002583B1 /* NBPhoneNumberDesc.m in Sources */,
 				0D19301D2293078C002583B1 /* FPNOBJCCountryKey.swift in Sources */,
 				0DF48B4422917077006AB39C /* FPNFormat.swift in Sources */,
 				0D1930052293078C002583B1 /* NBPhoneNumberUtil.m in Sources */,
 				0DF48B4522917077006AB39C /* FPNSearchCountryViewController.swift in Sources */,
+				AF62C761231BACAB00E87E67 /* FPNCountryPicker.swift in Sources */,
 				0D1930032293078C002583B1 /* NBAsYouTypeFormatter.m in Sources */,
 				0D1930252293078C002583B1 /* FPNCountry.swift in Sources */,
 				0D19300E2293078C002583B1 /* NBNumberFormat.m in Sources */,
@@ -338,7 +339,6 @@
 				0D19302A2293078C002583B1 /* FPNCountryCode.swift in Sources */,
 				0D19300B2293078C002583B1 /* NBRegExMatcher.m in Sources */,
 				0D19301C2293078C002583B1 /* NBPhoneNumberDefines.m in Sources */,
-				0D1930212293078C002583B1 /* FPNCountryPickerDelegate.swift in Sources */,
 				0D1930272293078C002583B1 /* Bundle+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

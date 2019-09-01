@@ -134,7 +134,7 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
         default:
             flagButton.addTarget(self, action: #selector(displayCountryKeyboard), for: .touchUpInside)
         }
-        flagButton.addTarget(self, action: #selector(displayCountryKeyboard), for: .touchUpInside)
+        
         flagButton.translatesAutoresizingMaskIntoConstraints = false
         flagButton.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .horizontal)
     }
