@@ -17,7 +17,7 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
     }
     
     public var countryPickerType: CountryPickerType = .PICKER_SEARCH {
-        didSet(type) {
+        willSet(type) {
             flagButton.removeTarget(nil, action: nil, for: .allEvents)
             switch  type{
             case .PICKER_SEARCH:
