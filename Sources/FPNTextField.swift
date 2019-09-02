@@ -26,6 +26,7 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
                 flagButton.addTarget(self, action: #selector(displayAlphabeticKeyBoard), for: .touchUpInside)
             case .PICKER:
                 self.parentViewController = nil
+                flagButton.addTarget(self, action: #selector(displayCountryKeyboard), for: .touchUpInside)
             }
             
         }
