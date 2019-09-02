@@ -9,13 +9,29 @@
 import UIKit
 
 open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
-    public enum CountryShowerType {
-        case countryPickerWithCountrySaerch
-        case countryPicker
-        case countrySearch
+    /// Country picker type
+    public enum CountryPickerType {
+        case SEARCH
+        case PICKER
+        case PiCKER_SEARCH
     }
+    
+    public var countryPickerType: CountryPickerType = .POCKER_SEARCH {
+        didSet(type) {
+            flagButton.removeTarget(nil, action: nil, for: .allEvents)
+            switch  type{
+            case .POCKER_SEARCH:
+                flagButton.addTarget(self, action: #selector(displayCountryKeyboard), for: .touchUpInside)
+            case .SEARCH:
+                flagButton.addTarget(self, action: #selector(displayAlphabeticKeyBoard), for: .touchUpInside)
+            case .PICKER:
+                self.parentViewController = nil
+            }
+            
+        }
+    }
+    
     /// The size of the flag
-    public var countryShowerType: CountryShowerType = CountryShowerType.countryPickerWithCountrySaerch
     @objc public var flagSize: CGSize = CGSize(width: 32, height: 32) {
         didSet {
             layoutSubviews()
@@ -126,15 +142,7 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
         flagButton.contentVerticalAlignment = .fill
         flagButton.imageView?.contentMode = .scaleAspectFit
         flagButton.accessibilityLabel = "flagButton"
-        switch countryShowerType {
-        case .countryPickerWithCountrySaerch:
-            flagButton.addTarget(self, action: #selector(displayAlphabeticKeyBoard), for: .touchUpInside)
-        case .countrySearch:
-            flagButton.addTarget(self, action: #selector(displayAlphabeticKeyBoard), for: .touchUpInside)
-        default:
-            flagButton.addTarget(self, action: #selector(displayCountryKeyboard), for: .touchUpInside)
-        }
-        
+        flagButton.addTarget(self, action: #selector(displayCountryKeyboard), for: .touchUpInside)
         flagButton.translatesAutoresizingMaskIntoConstraints = false
         flagButton.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .horizontal)
     }
