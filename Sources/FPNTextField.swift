@@ -13,14 +13,14 @@ open class FPNTextField: UITextField, FPNCountryPickerDelegate, FPNDelegate {
     public enum CountryPickerType {
         case SEARCH
         case PICKER
-        case PiCKER_SEARCH
+        case PICKER_SEARCH
     }
     
-    public var countryPickerType: CountryPickerType = .POCKER_SEARCH {
+    public var countryPickerType: CountryPickerType = .PICKER_SEARCH {
         didSet(type) {
             flagButton.removeTarget(nil, action: nil, for: .allEvents)
             switch  type{
-            case .POCKER_SEARCH:
+            case .PICKER_SEARCH:
                 flagButton.addTarget(self, action: #selector(displayCountryKeyboard), for: .touchUpInside)
             case .SEARCH:
                 flagButton.addTarget(self, action: #selector(displayAlphabeticKeyBoard), for: .touchUpInside)
